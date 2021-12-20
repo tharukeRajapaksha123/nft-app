@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import './App.css';
 import Header from './components/Header';
+import Main from './components/Main';
 import PunkList from './components/PunkList';
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
   return (
     <div className="app">
       <Header/>
-      {/* <CollectionCard id="0" name="Bandana Punk" traits={[{'value':7}]} image="/images/1.jpg"/> */}
+      <Main/>
       <PunkList punkListData= {pubnkListData} />
     </div>
   );

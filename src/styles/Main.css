@@ -1,0 +1,96 @@
+.main{
+    max-height: 50vh;
+
+}
+
+.main-content{
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.punk-height{
+    flex: 0.25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.punk-container{
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    margin-right: 20px;
+}
+
+.punk-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0.75;
+}
+
+.selected-punk{
+    max-width : min(30vw,40vh);
+    object-fit:contain;
+    max-height:30vw;
+}
+
+.title{
+    font-size: 96px;
+    font-weight: 800;
+}
+
+.item-number{
+    color:#a1a5ba;
+    font-size: 72px;
+    align-self: center;
+}
+
+.owner{
+    display: flex;
+
+    margin:10px 0;
+    height: 50px;
+}
+
+.owner-image-container{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.owner-image-container > img{
+    height: 100%;
+    width: 100%;   
+}
+
+.owner-details{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.owner-name-handle{
+    flex: 1;
+}
+
+.owner-handle{
+    color: #00ebfe;
+}
+
+.owner-link{
+    padding:12px;
+    border-radius: 50px;
+    height:50px;
+    width:50px;
+    border: 1px solid #fff;
+    margin: 0 0 0 10px;
+}
+
+.owner-link > img{
+    width: 100%;
+    height: 100%;
+}
