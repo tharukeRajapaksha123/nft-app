@@ -1,5 +1,9 @@
 ![Screenshot](home_image.PNG)
 
+<h1>NFT React App</h1>
+
+<p> NFT react app is a web app based on web 3.0. </p>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
