@@ -26,12 +26,12 @@
 .punk-details{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     flex: 0.75;
+    justify-content: space-between;
 }
 
 .selected-punk{
-    max-width : min(30vw,40vh);
+    max-width : min(30vw, 40vh);
     object-fit:contain;
     max-height:30vw;
 }
@@ -49,17 +49,19 @@
 
 .owner{
     display: flex;
-
     margin:10px 0;
     height: 50px;
 }
-
+.spacer{
+    flex: 1;
+}
 .owner-image-container{
     height: 50px;
     width: 50px;
     overflow: hidden;
     border-radius: 50%;
     object-fit: contain;
+    margin-right: 20px;
 }
 
 .owner-image-container > img{
@@ -93,4 +95,8 @@
 .owner-link > img{
     width: 100%;
     height: 100%;
+}
+
+.owner-name-and-handle >span{
+    color: white;
 }

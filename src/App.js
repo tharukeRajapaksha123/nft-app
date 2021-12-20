@@ -7,7 +7,7 @@ import PunkList from './components/PunkList';
 
 function App() {
   const [pubnkListData,setPubkListData] = useState([])
-
+  const [activePunk,setActivePunk] = useState(pubnkListData[0])
 
   useEffect(()=>{
    // console.log("called")
@@ -22,8 +22,15 @@ function App() {
   return (
     <div className="app">
       <Header/>
-      <Main/>
-      <PunkList punkListData= {pubnkListData} />
+      {
+        pubnkListData.length > 0 &&
+        (  
+          <>
+            <Main activePunk={activePunk}/>
+            <PunkList punkListData= {pubnkListData} setActivePunk={setActivePunk}/>
+          </>
+        )
+      }
     </div>
   );
 }
